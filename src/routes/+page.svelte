@@ -13,7 +13,22 @@
 	});
 
 	const handleContact = () => {
-		toast.success('Message has been sent', {
+		const emailValid =
+			contact.email &&
+			!!contact.email.match(
+				/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+			);
+
+		if (!emailValid) {
+			toast.error('Please enter a valid email address.');
+			return;
+		}
+		if (!contact.message) {
+			toast.error('Please enter a message.');
+			return;
+		}
+
+		toast.success('Message has been sent!', {
 			description: `We will get back to you at ${contact.email} as soon as possible.`
 		});
 
@@ -157,6 +172,6 @@
 		<Button class="cursor-pointer text-white" variant="link" href="mailto:example@gmail.com"
 			>example@gmail.com</Button
 		>
-		<p class="hover:underline">+1 (___) ___-____</p>
+		<a class="hover:underline" href="tel:+1(___)___-____">+1 (___) ___-____</a>
 	</footer>
 </div>
