@@ -28,12 +28,31 @@
 			return;
 		}
 
-		toast.success('Message has been sent!', {
-			description: `We will get back to you at ${contact.email} as soon as possible.`
-		});
+		const formData = new FormData();
+		formData.append('email', contact.email);
+		formData.append('message', contact.message);
 
-		contact.email = '';
-		contact.message = '';
+		fetch('/contact', {
+			method: 'POST',
+			body: formData
+		})
+			.then((response) => {
+				if (!response.ok) {
+					throw new Error(`Error: ${response.statusText}`);
+				}
+
+				toast.success('Message has been sent!', {
+					description: `We will get back to you at ${contact.email} as soon as possible.`
+				});
+
+				contact.email = '';
+				contact.message = '';
+
+				return response.json();
+			})
+			.catch((error) => {
+				toast.error(`Error sending message: ${error.message}`);
+			});
 	};
 </script>
 
