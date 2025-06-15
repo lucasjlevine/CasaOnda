@@ -39,7 +39,7 @@
 				class="mt-12 -mb-4 max-w-[860px] text-3xl/relaxed max-[860px]:mx-8 max-[860px]:text-xl/normal"
 			>
 				<p>
-					&emsp;Onda in Spanish translates to a wave, a ripple or a vibe Nosara, Costa Rica is home
+					&emsp;Onda in Spanish translates to a wave, a ripple or a vibe. Nosara, Costa Rica is home
 					to world-famous waves, stunning beaches, vibrant yoga culture, and incredible cuisine.
 					It's a place where nature and soul connect—and where every sunrise feels like a fresh
 					beginning. Casa Onda was born from a deep love for this magical corner of the world.
@@ -81,8 +81,12 @@
 						/>
 					</Carousel.Item>
 				</Carousel.Content>
-				<Carousel.Previous class="text-black max-[860px]:hidden" />
-				<Carousel.Next class="text-black max-[860px]:hidden" />
+				<Carousel.Previous
+					class="max-[860px]:hover:bg-accent max-[860px]:hover:text-accent-foreground max-[860px]:dark:hover:bg-accent/50 text-black max-[860px]:ml-14 max-[860px]:h-6 max-[860px]:w-6 max-[860px]:border-2 max-[860px]:bg-transparent max-[860px]:text-white"
+				/>
+				<Carousel.Next
+					class="max-[860px]:hover:bg-accent max-[860px]:hover:text-accent-foreground max-[860px]:dark:hover:bg-accent/50 text-black max-[860px]:mr-14 max-[860px]:h-6 max-[860px]:w-6 max-[860px]:border-2 max-[860px]:bg-transparent max-[860px]:text-white"
+				/>
 			</Carousel.Root>
 			<div
 				class="max-w-[860px] text-3xl/relaxed *:mb-4 max-[860px]:mx-8 max-[860px]:text-lg/normal"
@@ -106,7 +110,7 @@
 		</main>
 	</div>
 	<div
-		class="bg-accent mt-12 flex w-full flex-row items-center justify-between p-4 py-24 max-[860px]:flex-col max-[860px]:items-center max-[860px]:gap-y-8"
+		class="bg-accent mt-12 flex w-full flex-row items-center justify-between p-4 py-24 max-[860px]:flex-col max-[860px]:gap-y-8"
 	>
 		<div class="mr-2 ml-8 flex w-full flex-col items-center justify-center gap-y-8">
 			<h2 class="text-center text-4xl font-semibold">Pricing and Availability</h2>
@@ -124,7 +128,7 @@
 				the form to the right to get in contact with us!
 			</p>
 		</div>
-		<div class="mr-8 ml-2 flex w-full flex-col items-center justify-center gap-y-8">
+		<div class="mr-8 ml-2 flex w-full flex-col items-center justify-center gap-y-8 px-4">
 			<h2 class="text-center text-4xl font-semibold">Contact Us</h2>
 			<Input
 				type="email"
