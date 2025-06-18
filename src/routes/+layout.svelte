@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Footer from '$lib/components/Footer.svelte';
 	import { Toaster } from '$lib/components/ui/sonner/index.js';
 	import '../app.css';
 
@@ -7,7 +8,10 @@
 
 <main class="newsreader">
 	<Toaster richColors />
-	{@render children()}
+	<div class="w-screen">
+		{@render children()}
+		<Footer />
+	</div>
 </main>
 
 <svelte:head>
