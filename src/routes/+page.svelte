@@ -1,13 +1,10 @@
 <script lang="ts">
-	import Navbar from '$lib/components/Navbar.svelte';
 	import CasaCarousel from '$lib/components/CasaCarousel.svelte';
 	import Contact from '$lib/components/Contact.svelte';
-	import Footer from '$lib/components/Footer.svelte';
 </script>
 
 <div class="flex w-full flex-col items-center">
 	<div class="bg-primary flex w-full flex-col items-center justify-center text-white">
-		<Navbar />
 		<div
 			class="m-8 flex items-center justify-end py-24 text-center text-7xl font-semibold max-[860px]:m-4 max-[860px]:flex-col max-[860px]:py-16 max-[860px]:text-5xl"
 		>

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Navbar from '$lib/components/Navbar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import { Toaster } from '$lib/components/ui/sonner/index.js';
 	import '../app.css';
@@ -9,6 +10,7 @@
 <main class="newsreader">
 	<Toaster richColors />
 	<div class="w-screen">
+		<Navbar />
 		{@render children()}
 		<Footer />
 	</div>

@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Navbar from '$lib/components/Navbar.svelte';
 	import { Button } from '$lib/components/ui/button/index';
 
 	const restaurants = [
@@ -33,7 +32,6 @@
 </script>
 
 <div class="bg-primary flex w-full flex-col items-center justify-center text-white">
-	<Navbar />
 	<div
 		class="m-8 flex flex-col items-center justify-end py-16 text-center text-5xl/relaxed font-semibold max-[860px]:m-4 max-[860px]:py-8 max-[860px]:text-3xl"
 	>
