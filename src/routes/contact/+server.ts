@@ -12,7 +12,7 @@ export async function POST({ request }) {
 	const response = await resend.emails.send({
 		// from: email,
 		from: 'onboarding@resend.dev',
-		to: 'casa.onda.web@gmail.com',
+		to: 'casaondanosara@gmail.com',
 		subject: `Casa Onda Contact Form | ${email}`,
 		html: `
             <p>Sent: ${date.toLocaleDateString()} ${date.toLocaleTimeString()}</p>

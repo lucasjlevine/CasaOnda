@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Navbar from '$lib/components/Navbar.svelte';
 	import { Button } from '$lib/components/ui/button/index';
 
 	const restaurants = [
@@ -27,15 +28,27 @@
 			name: "Rosi's Playa Pelada & Soda Tiki",
 			url: 'https://www.instagram.com/rosissodatica/',
 			images: ['/RosisPlayaPelada.jpeg']
+		},
+		{
+			name: 'Pulpo Pelada',
+			url: 'https://www.instagram.com/pulpo_pelada/',
+			images: ['/PulpoPelada.jpg']
 		}
 	];
 </script>
 
 <div class="bg-primary flex w-full flex-col items-center justify-center text-white">
 	<div
-		class="m-8 flex flex-col items-center justify-end py-16 text-center text-5xl/relaxed font-semibold max-[860px]:m-4 max-[860px]:py-8 max-[860px]:text-3xl"
+		style="background-image: url('/background/BeachBackground.JPG')"
+		class="w-full bg-cover bg-center"
 	>
-		Discover the wonderful&nbsp;<span class="italic">food, drink, and fun</span> Nosara has to offer.
+		<Navbar />
+		<div
+			class="my-32 flex h-[200px] flex-col items-center justify-end rounded-4xl p-8 text-center text-6xl font-semibold max-[860px]:m-4 max-[860px]:py-16 max-[860px]:text-2xl"
+			style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);"
+		>
+			Discover the wonderful&nbsp;<span class="italic">food, drink, and fun</span> Nosara has to offer.
+		</div>
 	</div>
 </div>
 <main class="flex flex-row justify-center max-[860px]:flex-col">

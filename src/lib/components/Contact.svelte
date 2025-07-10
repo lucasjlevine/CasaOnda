@@ -55,7 +55,7 @@
 </script>
 
 <div
-	class="bg-accent mt-12 flex w-full flex-row items-center justify-between p-4 py-24 max-[860px]:flex-col max-[860px]:gap-y-8"
+	class="flex w-full flex-row items-center justify-between bg-blue-200 p-4 py-24 pt-12 max-[860px]:flex-col max-[860px]:gap-y-8"
 >
 	<div class="mr-2 ml-8 flex w-full flex-col items-center justify-center gap-y-8">
 		<h2 class="text-center text-4xl font-semibold">Pricing and Availability</h2>
