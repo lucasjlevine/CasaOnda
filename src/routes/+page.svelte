@@ -78,6 +78,11 @@
 							<li>Two Twin Beds</li>
 							<li>Shared Full Bath with Room 2</li>
 						</ul>
+						<p>And...</p>
+						<ul class="list-disc pl-8 text-xl">
+							<li>Full Size Pool</li>
+							<li>Outdoor Covered BBQ and Seating Area</li>
+						</ul>
 					</div>
 					<div class="bg-accent rounded-2xl">
 						<div
@@ -96,17 +101,22 @@
 							<li>Double Bunk Beds</li>
 							<li>Shared Full Bath with Room 1</li>
 						</ul>
+						<p>And...</p>
+						<ul class="list-disc pl-8 text-xl">
+							<li>Plunge Pool</li>
+						</ul>
 					</div>
 					<div class="flex h-full flex-col items-center justify-center gap-y-4">
 						<h1 class="text-4xl font-semibold">Amenities</h1>
 						<ul class="w-fit list-disc text-xl">
-							<li>Mini splits in each room</li>
-							<li>Living area/eat in kitchen</li>
-							<li>Outdoor dining</li>
-							<li>Plunge pool</li>
-							<li>Parking</li>
-							<li>Entire lot gated and fenced in</li>
 							<li>WiFi</li>
+							<li>Mini splits in each room</li>
+							<li>Separate Parking for Main House and Casita</li>
+							<li>Outdoor dining options</li>
+							<li>Living area/eat in kitchen</li>
+							<li>Entire lot gated and fenced in</li>
+							<li>Quiet Residential Neighborhood</li>
+							<li>Pelada Beach just a 1/2 mile away</li>
 						</ul>
 					</div>
 				</div>
