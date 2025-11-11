@@ -2,7 +2,7 @@ import { json } from '@sveltejs/kit';
 import { Resend } from 'resend';
 
 export async function POST({ request }) {
-	const resend = new Resend('re_PHiqz3k4_8JiV4KViADqEKbim1EuCZnvT');
+	const resend = new Resend('<RESEND_API_KEY>');
 
 	const formData = await request.formData();
 	const email = formData.get('email') as string;
